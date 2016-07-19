@@ -1,0 +1,29 @@
+	<div class="demo-card-wide mdl-card mdl-shadow--2dp sessCard">
+	  
+	  <div class="mdl-card__title">
+	    <h2 class="mdl-card__title-text">Export Sessions</h2>   
+	  </div>
+
+	  <div class="row">
+	  	<settings></settings>
+	  </div>
+
+	  <div class="mdl-card__actions mdl-card--border">
+	  	<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect pull-left" ng-click="listSessions()">
+	      Get Sessions
+	    </a>
+	    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect pull-right" csv-header="csvOrder" filename="eventSessions.csv" ng-csv="exportCsv" add-bom="true">
+	      Export	      
+	    </a>
+	    <growl-notifications class="pull-left"></growl-notifications>
+	    <growl-notification ttl="9000" ng-if="eeg.success" class="success" on-close="eeg.success = false">Total Sessions: {{eeg.sessionNumbers}}</growl-notification>
+	    <growl-notification ttl="3000" ng-if="eeg.error" class="error" on-close="eeg.error = false">Error!</growl-notification>
+	  </div>
+
+	  <div class="mdl-card__menu">
+	    <button class="mdl-button  mdl-js-button mdl-js-ripple-effect authorized" ng-click="connect()" ng-class="{'authorized--confirmed' : eeg.creds.authorized}">
+	      {{eeg.creds.authroizedText}}
+	    </button>
+	  </div>
+
+	</div>

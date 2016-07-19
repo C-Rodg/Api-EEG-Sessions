@@ -1,0 +1,162 @@
+/*------------------------------------   Overwrites  -------------------------------------*/
+.authorized {
+  color: #e74c3c;
+}
+
+.authorized.authorized--confirmed {
+  color: #27ae60;
+}
+
+.sess__nav {
+	background-color: #fff;
+	color: rgb(0,150,136);
+}
+
+.sess__nav i {
+	color: rgb(0,150,136);
+}
+
+.page-content .container {
+	margin-top: 45px;
+}
+
+.mdl-layout__content {
+	background-color: #fafafa;
+}
+
+.sessCard {
+	width: auto;
+  max-width: 550px;
+  margin: auto;
+}
+
+.sessCard .row {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.sessCard>.row {
+  margin-bottom: 16px;
+}
+
+growl-notifications {
+  height: 36px;
+  min-width: 190px;
+  padding: 0 16px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size:14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height:36px;
+  vertical-align: middle;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
+}
+
+growl-notification {
+  display: block;
+  height: 100%;
+  left: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+growl-notification.success{
+  color: #27ae60;
+}
+
+growl-notification.error{
+  color: #e74c3c;
+}
+
+/*-----  Create own material design Select styles  ----*/
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: 4px 0;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0, 0.12);
+}
+
+input:focus,
+input:active,
+input {
+	outline: 0;
+	outline-color: transparent;
+}
+
+select option {
+	color: rgba(0,0,0,0.26);
+}
+
+select {
+  color: rgba(0,0,0,0.26);
+}
+
+/* Remove focus */
+select:focus {
+  outline: none;
+}
+
+/* Hide label */
+.mdl-selectfield label {
+  display: none;
+}
+
+/* Use custom arrow */
+.mdl-selectfield select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.mdl-selectfield {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+.mdl-selectfield:after {
+  position: absolute;
+  /*top: 0.75em;*/
+  top: 45%;
+  /*right: 0.5em;*/
+  right: 20px;
+  /* Styling the down arrow */
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: .25em solid transparent;
+  border-right: .25em solid transparent;
+  border-top: 0.375em solid rgba(0,0,0, 0.12);
+  pointer-events: none;
+}
+
+.mdl-textfield {
+	width: 100%;
+}
+
+.mdl-checkbox__focus-helper,
+.mdl-checkbox__box-outline {
+	top: 23px;
+}
+.mdl-checkbox {
+	padding-top:20px;
+}
+
+.mdl-checkbox__ripple-container {
+	top: 14px;
+}
+
+
+
+/*------------------------------------   Utility Classes -------------------------------------*/
+.text-center {
+	text-align: center;
+}

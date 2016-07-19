@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EEG Sessions Exporter</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.teal-red.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header sess__nav container">
+    <div class="mdl-layout__header-row ">
+      <!-- Title -->
+      <img src="img/logo.png" alt="">
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+		<h4>EEG Session Exporter</h4>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">EEG</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Login</a>
+      <a href="" class="mdl-navigation__link">Eventsforce Session API</a>
+      <a class="mdl-navigation__link" href="">Eval Generator</a>
+      <a class="mdl-navigation__link" href="">HTML Generator</a>
+      <a class="mdl-navigation__link" href="">Data Merger</a>   
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content" ng-app="apiSessionsApp" ng-cloak>  
+    <div class="page-content">
+    	<div class="container" ng-controller="EegCtrl">                    
+			<card></card>		
+		</div><!--End of Container-->
+    </div>
+  </main>
+</div>
+
+
+
+
+
+
+<!--  Scripts  -->
+<script type="text/javascript" src="js/angular.min.js" defer></script>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js" defer></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js" defer></script>
+<script type="text/javascript" src="libs/angular-base64.min.js" defer></script>
+<script type="text/javascript" src="libs/angular-growl-notifications.min.js" defer></script>
+<script type="text/javascript" src="libs/ng-csv.min.js" defer></script>
+<script type="text/javascript" src="libs/moment.min.js" defer></script>
+<script type="text/javascript" src="libs/angular-moment.min.js" defer></script>
+<script type="text/javascript" src="js/app.js" defer></script>
+<script type="text/javascript" src="js/services.js" defer></script>
+<script type="text/javascript" src="js/controller.js" defer></script>
+</body>
+</html>
